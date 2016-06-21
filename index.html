@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <!-- JS -->
+    <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+    <script src='bundle.js'></script>
+    <script src='public/js/docready.js'></script>
+    <script src='public/js/script.js'></script>
+</head>
+<body>
+    <div class='container-fluid'>
+    <div class='row'>
+      <div class="main-header col-xs-12">
+        <h2>
+          <span class='red'><</span>F<span class='green'>Q</span>M<span class='yellow'>></span>
+          <p><small>Be Fit Like Je Boy Malis</small></p>
+        </h2>
+      </div>
+      <div class="menu-nav col-xs-12">
+        <img id="sidemenu-toggle" class="toggle-open" src="/images/menu.svg">
+      </div>
+      <div id='sidemenu'>
+        <div class='sidemenu-header'>  
+          < <span class='red'>F</span>itje<span class='green'>Q</span>oach<span class='yellow'>M</span>alis >
+        </div>
+        <div>
+          <ul id="sidemenu-navs">
+            <li class="sidemenu-nav"><a href="/exercises/app">Exercises</a></li>
+            <li class="sidemenu-nav"><a href="/workouts/app">Workouts</a></li>
+            <li class="sidemenu-nav"><a>Calendar</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="nav-blur" class='blur'></div>
+    </div>
+    <div id='content' class='row'>
+      <workout-add></workout-add>
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>

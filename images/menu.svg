@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--?xml version="1.0" standalone="no"?-->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="300.000000pt"
+   height="300.000000pt"
+   viewBox="0 0 300.000000 300.000000"
+   preserveAspectRatio="xMidYMid meet"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="menu.svg">
+  <defs
+     id="defs18" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="738"
+     inkscape:window-height="480"
+     id="namedview16"
+     showgrid="false"
+     inkscape:zoom="0.62933333"
+     inkscape:cx="-79.96351"
+     inkscape:cy="251.05932"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g6" />
+  <metadata
+     id="metadata4">
+    <rdf:rdf>
+      <rdf:description
+         dc:title="menu list mobile app"
+         dc:publisher="Hiox"
+         dc:date="2015-03-14"
+         dc:format="image/svg+xml"
+         dc:language="en">
+        <dc:creator>
+          <rdf:bag>
+            <rdf:li>svgimages.com</rdf:li>
+          </rdf:bag>
+        </dc:creator>
+      </rdf:description>
+    </rdf:rdf>
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="matrix(0.151016,0,0,-0.1510085,-75.166293,376.60674)"
+     id="g6"
+     style="fill:#050505;stroke:none">
+    <path
+       d="m 505,2487 c -3,-7 -4,-118 -3,-247 l 3,-235 248,-3 247,-2 -2,247 -3,248 -243,3 c -191,2 -244,0 -247,-11 z"
+       id="node1"
+       class="node"
+       style="fill:#ffe94a;fill-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 1257,2493 c -4,-3 -7,-116 -7,-250 l 0,-243 623,2 622,3 0,245 0,245 -616,3 c -338,1 -619,-1 -622,-5 z"
+       id="node2"
+       class="node"
+       style="fill:#ffffff"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 504,1737 c -2,-7 -3,-118 -2,-247 l 3,-235 245,0 245,0 3,248 2,247 -245,0 c -189,0 -247,-3 -251,-13 z"
+       id="node3"
+       class="node"
+       style="fill:#45a163;fill-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 1255,1737 c -3,-7 -4,-118 -3,-247 l 3,-235 620,0 620,0 0,245 0,245 -618,3 c -494,2 -619,0 -622,-11 z"
+       id="node4"
+       class="node"
+       style="fill:#ffffff"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 504,987 c -2,-7 -3,-118 -2,-247 l 3,-235 245,0 245,0 3,248 2,247 -245,0 c -189,0 -247,-3 -251,-13 z"
+       id="node5"
+       class="node"
+       style="fill:#dc143c;fill-opacity:0.94117647"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 1255,987 c -3,-7 -4,-118 -3,-247 l 3,-235 620,0 620,0 0,245 0,245 -618,3 c -494,2 -619,0 -622,-11 z"
+       id="node6"
+       class="node"
+       style="fill:#ffffff"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
+     fill="#BBBBBB"
+     stroke="none"
+     id="g14" />
+</svg>

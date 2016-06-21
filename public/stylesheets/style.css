@@ -1,0 +1,519 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
+@font-face {
+  font-family: Baron;
+  src: url("../fonts/BaronNeue.otf") format("opentype");
+}
+
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+body{
+    height:100%; /* force the BODY element to match the height of the HTML element */
+}
+
+body {
+  font: 19px 'Titillium Web', sans-serif;
+}
+
+a{
+  color: crimson;
+}
+
+a:hover{
+  color: crimson;
+}
+
+.nav>li.disabled>a {
+    color: #ddd;
+}
+
+.blur{
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity:1;
+  z-index: 99;
+  position: absolute;
+  top: 157px;
+  left:0;
+  display: none;
+}
+
+.main-header, .sidemenu-header{
+  font: 14px "Baron", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.menu-nav{
+  background-color: #000;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  border-top: 1px solid;
+}
+  .menu-nav > img{
+    cursor: pointer;
+  }
+.tag {
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 8px 10px 8px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.tag::before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.tag::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #eee;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tag:hover {
+  background-color: crimson;
+  color: white;
+}
+
+.tag:hover::after {
+   border-left-color: crimson; 
+}
+ .tag > .deleteTag{
+  color: #ccc;
+  margin-left: 10px;
+  cursor: pointer
+}
+
+.red{
+  color: crimson;
+}
+
+.green{
+  color: #45a163;
+}
+
+.yellow{
+  color: #FFE94A;
+}
+
+.white{
+  color: #FFF;
+}
+
+
+.exerciseRow{
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 1px;
+  float: none !important;
+}
+#page-nav-container{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.h-scroll-row{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0;
+  margin-bottom: 17px;
+}
+.h-scroll{
+  width: 150%;
+  height: 170px;
+  
+}
+
+.h-scroll-hide-bar{
+    position: relative;
+    top: 172px;
+    background-color: black;
+    height: 31px;
+    color: white;
+}
+
+.h-scroll div{
+  padding: 0;
+  margin-top: 15px;
+  height: 140px;
+  display: inline-block;
+  width: 32%;
+  background-color: crimson; 
+  color: #fff;
+}
+.h-scroll div:first-child{
+  margin-left: 1.6%;
+}
+.stats-palet-row{
+  background-color: black;
+}
+
+.graph{
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#sidemenu{
+  z-index: 100;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 157px;
+  left: 0;
+  background-color: #000;
+  opacity: 0.9;
+  overflow: hidden;
+}
+  .sidemenu-header{
+    font-size: 24px;
+    padding-top: 20px;
+  }
+
+#sidemenu-navs{
+  list-style-type: none;
+  padding: 0;
+  margin-top: 50px;
+}
+  .sidemenu-nav{
+    padding: 11px 0px;
+    text-align: center;
+  }
+  
+  
+  .sidemenu-nav > a{
+    color: #FFF;
+  }
+  
+  #sidemenu-toggle{
+    width: 45px;
+    height: 45px;
+    margin: 5px 0;
+  }
+.mobile-add-btn{
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    opacity: 0.9;
+}
+
+.mobile-nav-btn{
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+    opacity: 0.9;
+    z-index: 5;
+    border-radius: 30px;
+}
+
+.mobile-nav-btn.right{
+    right: 15px;
+}
+
+.mobile-nav-btn.left{
+    left: 15px;
+}
+
+.btn-inverted{
+  background-color: black !important;
+  border: 0;
+}
+
+.btn-inverted:hover, .btn-inverted:active, .btn-inverted.active{
+  color: crimson !important;
+}
+
+.btn-inactive{
+  background-color: #333;
+  border-color: #333;
+  color: #FFF;
+}
+
+.btn-inactive:hover, .btn-inactive:active, .btn-inactive:focus{
+  background-color: #45a163;
+  border-color: #45a163;
+  color:#fff;
+}
+
+.btn-yellow{
+  background-color: #FFE94A;
+  border-color: #FFE94A;
+  color: #000000;
+}
+
+.btn-yellow:hover, .btn-yellow:active, .btn-yellow:focus{
+  background-color: #ddd;
+  border-color: #c6c6c6;
+  color: #000000;
+}
+
+.btn-crimson{
+  background-color: crimson;
+  border-color: #c61236;
+  color: white;
+}
+
+.btn-crimson:hover, .btn-crimson:active, .btn-crimson:focus{
+  background-color: #ddd;
+  border-color: #c6c6c6;
+  color: crimson;
+}
+
+.btn-green{
+  background-color: #45a163;
+  border-color: #3e9059;
+  color: white;
+}
+
+.btn-green:hover, .btn-green:active, .btn-green:focus{
+  background-color: #ddd;
+  border-color: #c6c6c6;
+  color: #45a163;
+}
+
+.btn-styled{
+  background-color: #5fba7d;
+  border-color: #45a163;
+  font-size: 20px;
+  color: #FFF;
+}
+
+.btn-styled:hover, .btn-styled:active, .btn-styled:focus{
+  background-color: #45a163;
+  border-color: #45a163;
+  color:#fff;
+}
+
+.inline-item{
+  height: 49px;
+  padding: 10px 5px;
+  border-width: 1px;
+  border-radius: 1px;
+  font-size: 19px;
+}
+
+.inline-item.item-selecter{
+  text-align: center;
+  cursor: pointer;
+  color: #FFF;
+}
+
+.item-selecter.color1, .mobile-nav-btn.color1{
+  background-color: #45a163;
+}
+
+.item-selecter.color1:hover, .item-selecter.color1:active, .item-selecter.color1:focus{
+  background-color: #ddd;
+  border-color: #c6c6c6;
+  color: #45a163;
+}
+
+.item-selecter.color2, .inline-item.color2{
+  background-color: crimson;
+}
+
+.item-selecter.color3, .inline-item.color3{
+  background-color: #ddd;
+}
+
+.item-selecter.color4, .inline-item.color4, .mobile-nav-btn.color4{
+  background-color: #FFE94A;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.br1{
+  border-radius: 1px !important;
+}
+
+.mb5{
+  margin-bottom: 5px;
+}
+
+.mb15{
+  margin-bottom: 15px;
+}
+
+.mb90{
+  margin-bottom: 90px;
+}
+
+.pb5{
+  margin-bottom: 5px;
+}
+
+.pb15{
+  margin-bottom: 15px;
+}
+
+.pb100{
+  margin-bottom: 100px;
+}
+
+.search-component > div > input{
+  height: 49px;
+}
+
+.exerciseRowAddToWorkoutList{
+  width: 15%;
+}
+
+.exerciseRowDetail{
+  width: 85%;
+}
+
+.workoutList{
+  margin-top: 15px;
+}
+.workoutEntry{
+  margin-bottom: 5px;
+}
+
+.workoutEntryButton{
+  text-align: center;
+  padding: 5px 0px;
+  background-color: #5fba7d;
+  border-color: #45a163;
+  line-height: 32px;
+  margin-top: 5px;
+  overflow: auto;
+}
+.workoutEntryToggle{
+  display:  none;
+  height: 32px;
+}
+
+.workoutEntryButton:hover .workoutEntryToggle{
+  display: inline !important;
+}
+
+.high-input{
+  height: 42px;
+  margin-bottom: 5px;
+}
+
+.workoutEntrySets{
+  overflow: hidden;
+  height: 0;
+}
+
+.border-radius-1{
+  border-radius: 1px;
+}
+
+.full-width{
+  width: 100% !important;
+}
+
+.half-width{
+  width: 50% !important;
+}
+
+.back2list{
+  position: fixed;
+  bottom: 15px;
+  z-index: 20;
+  left: 15px;
+  opacity: 0.9;
+}
+
+.back2list>img{
+  width:60px;
+}
+
+.detail-title{
+  margin-top: 0;
+  padding: 10px 0;
+  height: 49px;
+  text-align: center;
+}
+
+.back2list:hover, .back2list:active, .back2list:focus{
+  opacity: 1;
+}
+
+.popup, .popup-form{
+  position: fixed;
+  z-index: 1050;
+  top: 2vh;
+  width: 90vw;
+  height: 96vh;
+  overflow-y: auto;
+  left: 5vw;
+  padding: 50px 20px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.popup-close{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: #ccc;
+}
+
+.popup-blur{
+  position: fixed;
+  z-index: 1040;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  background-color: #555;
+  opacity: 0.95;
+}
+
+.myalert{
+  position: fixed;
+    bottom: 10px;
+    left: 15px;
+    right: 80px;
+    height: 30px;
+    font-size: 11px;
+    padding-top: 4px;
+    padding-bottom: 0;
+}
+
+.error::-webkit-input-placeholder {
+   color: red;
+}
+
+.error:-moz-placeholder { /* Firefox 18- */
+   color: red;  
+}
+
+.error::-moz-placeholder {  /* Firefox 19+ */
+   color: red;  
+}
+
+.error:-ms-input-placeholder {  
+   color: red;  
+}
+
