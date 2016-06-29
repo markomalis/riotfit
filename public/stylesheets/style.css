@@ -323,7 +323,7 @@ a:hover{
   color: #FFF;
 }
 
-.item-selecter.color1, .mobile-nav-btn.color1{
+.inline-item.color1, .item-selecter.color1, .mobile-nav-btn.color1{
   background-color: #45a163;
 }
 
@@ -351,6 +351,18 @@ a:hover{
 
 .br1{
   border-radius: 1px !important;
+}
+
+.bb1{
+  border-bottom: 1px;
+}
+
+.bc1{
+  border-bottom: solid #ddd;
+}
+
+.bc2{
+  border-bottom: solid #45a163;
 }
 
 .mb5{
@@ -499,6 +511,40 @@ a:hover{
     font-size: 11px;
     padding-top: 4px;
     padding-bottom: 0;
+}
+
+.day{
+  width: 12%;
+  display: block;
+  float: left;
+  background-color: #fff;
+  color: crimson;
+  border: 0px solid ;
+  border-radius: 14%;
+  margin: 0 1%;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.day:hover{
+  background-color: #eee;
+}
+
+.day.planned{
+  background-color: #b4d9c0;
+}
+
+.day.current{
+  background-color: crimson;
+  color: white !important;
+}
+
+.day-box:first-child{
+  margin-left: 2%;
+}
+
+.day-box:last-child{
+  margin-right: 2%;
 }
 
 .error::-webkit-input-placeholder {

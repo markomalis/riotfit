@@ -2,7 +2,7 @@ var path = require('path')
 
 module.exports = {
     context: __dirname + "/apps",
-    entry: "./workout.js",
+    entry: "./calendar.js",
     output: {
         path: __dirname + "/public/js/",
         filename: "bundle.js"
