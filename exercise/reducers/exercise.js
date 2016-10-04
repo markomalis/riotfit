@@ -1,6 +1,6 @@
 var redux = require('redux')
 var actions = require('../actions/exercise.js')
-var sortByName = require('../public/js/js_helpers.js').sortListByName
+var sortByName = require('../../public/js/js_helpers.js').sortListByName
 //Action variables
 var ADD_EXERCISE = actions.ADD_EXERCISE
 var ADD_TAG = actions.ADD_TAG

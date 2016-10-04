@@ -327,7 +327,11 @@ a:hover{
   background-color: #45a163;
 }
 
-.item-selecter.color1:hover, .item-selecter.color1:active, .item-selecter.color1:focus{
+.item-selecter.color1:hover{
+  text-decoration: underline;
+}
+
+.item-selecter.color1:active, .item-selecter.color1:focus{
   background-color: #ddd;
   border-color: #c6c6c6;
   color: #45a163;

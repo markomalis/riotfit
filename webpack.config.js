@@ -2,10 +2,16 @@ var path = require('path')
 
 module.exports = {
     context: __dirname + "/apps",
-    entry: "./calendar.js",
+    entry: {
+        calendar: "./calendar",
+        exercise: "./exercise",
+        workout: "./workout.js",
+        workoutcreator: "./workoutcreator.js"
+            
+    },
     output: {
         path: __dirname + "/public/js/",
-        filename: "bundle.js"
+        filename: "[name].js"
     },
     module: {
         loaders: [

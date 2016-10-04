@@ -87,8 +87,8 @@ var doc2 = {
         ]
 }
 
-//db.put(doc)
-//db.put(doc2)
+db.put(doc)
+db.put(doc2)
 
 db.allDocs({include_docs: true}).then(function (docs){
     var cals = docs

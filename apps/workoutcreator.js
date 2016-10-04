@@ -8,7 +8,13 @@ var sortByName = require('../public/js/js_helpers.js').sortListByName
 var exs = require('../test_data/exercise_test_data.js').data
 
 //Tags import
-require('../workout/tags/workout-app.tag')
+require('../workout/tags/exercise-list.tag')
+require('../workout/tags/search.tag')
+require('../workout/tags/workout-creator.tag')
+require('../workout/tags/workout-list.tag')
+require('../workout/tags/workout-set.tag')
+require('../workout/tags/workout-set-container.tag')
+require('../workout/tags/workout-set-entry.tag')
 
 exs = exs.map(function(e){
     e.visible= true
@@ -18,5 +24,5 @@ var store = redux.createStore(require('../workout/reducers/workout.js'),{ exerci
 
 
 document.addEventListener('DOMContentLoaded', function(){
-    riot.mount('div#main', 'workout-app')
+    riot.mount('div#main', 'workout-creator', { store: store })
 })

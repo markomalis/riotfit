@@ -2,11 +2,11 @@
     <div class=class={col-xs-12: true, col-sm-6: true, hidden-xs: this.state.panelView != 'LIST_VIEW'}>
         <search updatelist={updateList}></search>
         <button onclick={setAddView} type="button" class="btn btn-default full-width mb5 inline-item color2 item-selecter hidden-xs">Add Exercise</button>
-        <img onclick={setAddView} src='images/add.svg' class="mobile-nav-btn visible-xs" ></img>
+        <img onclick={setAddView} src='/images/add.svg' class="mobile-nav-btn visible-xs" >
         <exercise-list exercises={this.state.exercises} selectexercise={selectExercise}></exercise-list>
     </div>
     <div class={col-xs-12: true, col-sm-6: true, hidden-xs: this.state.panelView != 'DETAIL_VIEW'}>
-        <div class='back2list visible-xs' onclick={setListView} ><img src='images/back.svg'></span></div>
+        <img src='/images/back.svg' class='mobile-nav-btn visible-xs' onclick={setListView}>
         <ul class="nav nav-tabs nav-justified mb15">
             <li onclick={setExerciseView} class={ active: this.state.detailView == 'EXERCISE_VIEW' }><a>Exercise</a></li>
             <li onclick={setEditView} class={ active: this.state.detailView == 'EDIT_VIEW' }>

@@ -1,8 +1,8 @@
-<workout-add>
+<workout-creator>
     <div class={col-xs-12: true, col-sm-6: true, pb15: true, hidden-xs: this.state.panelView == "DETAIL_PANEL"}>
         <search search={ searchExercise }></search>
         <exercise-list exercises={ this.state.exercises } add_exercise={ addExercise }></exercise-list>
-        <img onclick={ setDetailPanel } src='images/list.svg' class="mobile-nav-btn right visible-xs color4" show={ this.state.panelView == "LIST_PANEL" } ></img>
+        <img onclick={ setDetailPanel } src='/images/list.svg' class="mobile-nav-btn right visible-xs color4" show={ this.state.panelView == "LIST_PANEL" } ></img>
         <div class="alert alert-warning alert-dismissible myalert hidden-sm" role="alert" show={ this.addedPopup }>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick={ closeAddedPopup }><span aria-hidden="true">&times;</span></button>
             <strong>{ this.lastSelectedExercise }</strong> added to the list
@@ -21,7 +21,7 @@
             delete_exercise={ deleteExercise }
             delete_set={ deleteSet }>
         </workout-list>
-        <img onclick={ setListPanel } src='images/back.svg' class="mobile-nav-btn left visible-xs" show={ this.state.panelView == "LIST_PANEL" } ></img>
+        <img onclick={ setListPanel } src='/images/back.svg' class="mobile-nav-btn left visible-xs" show={ this.state.panelView == "LIST_PANEL" } ></img>
     </div>   
     
     <script>
@@ -98,4 +98,4 @@
             store.dispatch(actions.panelView(actions.LIST_VIEW))
         }
     </script>
-</workout-add>
+</workout-creator>

@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -35,15 +35,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="709"
+     inkscape:window-width="738"
      inkscape:window-height="480"
      id="namedview14"
      showgrid="false"
      inkscape:zoom="9.8333333"
-     inkscape:cx="12"
+     inkscape:cx="11.147644"
      inkscape:cy="12"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-x="116"
+     inkscape:window-y="44"
      inkscape:window-maximized="0"
      inkscape:current-layer="Artboard-1" />
   <desc
@@ -51,11 +51,11 @@
   <defs
      id="defs8" />
   <g
-     fill="none"
-     fill-rule="evenodd"
      id="miu"
+     stroke-width="1"
      stroke="none"
-     stroke-width="1">
+     fill-rule="evenodd"
+     fill="none">
     <g
        id="Artboard-1"
        transform="translate(-539.000000, -155.000000)">
@@ -63,10 +63,10 @@
          id="slice"
          transform="translate(215.000000, 119.000000)" />
       <path
-         d="M551.5,178 C557.851275,178 563,172.851275 563,166.5 C563,160.148725 557.851275,155 551.5,155 C545.148725,155 540,160.148725 540,166.5 C540,172.851275 545.148725,178 551.5,178 Z M545,167 L545,166 L551,166 L551,160 L552,160 L552,166 L558,166 L558,167 L552,167 L552,173 L551,173 L551,167 L545,167 Z"
-         fill="#000000"
+         d="m 551.04237,179.01695 c 6.60401,0 11.95763,-5.35361 11.95763,-11.95763 0,-6.60401 -5.35362,-11.95763 -11.95763,-11.95763 -6.60401,0 -11.95762,5.35362 -11.95762,11.95763 0,6.60402 5.35361,11.95763 11.95762,11.95763 z m -6.75866,-11.43773 0,-1.03979 6.23877,0 0,-6.23876 1.03978,0 0,6.23876 6.23877,0 0,1.03979 -6.23877,0 0,6.23876 -1.03978,0 0,-6.23876 -6.23877,0 z"
          id="circle-add-plus-new-glyph"
-         style="fill:#dc143c;fill-opacity:1" />
+         style="fill:#dc143c;fill-opacity:1"
+         inkscape:connector-curvature="0" />
     </g>
   </g>
 </svg>
