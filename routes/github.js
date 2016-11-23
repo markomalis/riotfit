@@ -8,7 +8,7 @@ router.route('/')
     })
 
     .post(function(req,res,next){
-      console.log('in GitHub POST');
+      console.log('in GitHub POST ');
       console.log(req.body);
       this.message(req.body);
       res.status(200).send('OK');
