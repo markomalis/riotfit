@@ -3,12 +3,14 @@ var router = express.Router();
 
 router.route('/')
     .get(function(req,res,next){
-      message(req.body);
+      this.message(req.body);
       res.status(200).send('OK');
     })
 
     .post(function(req,res,next){
-      message(req.body);
+      console.log('in GitHub POST');
+      console.log(req.body);
+      this.message(req.body);
       res.status(200).send('OK');
     });
 
