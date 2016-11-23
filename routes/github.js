@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var {token} = require('./token.js');
 
 router.route('/')
     .get(function(req,res,next){
@@ -8,8 +9,6 @@ router.route('/')
     })
 
     .post(function(req,res,next){
-      console.log('in GitHub POST ');
-      console.log(req.body);
       this.message(req.body);
       res.status(200).send('OK');
     });
@@ -18,11 +17,11 @@ router.route('/')
 function message(body) {
   var owner = body.repository.owner.name;
   var repo = body.repository.name;
-  var comment_id =  commits[0].id;
+  var commit_id =  commits[0].id;
   var content = {
     "content": "heart"
   };
-  var path = '/repos/'+ owner +'/'+ repo +'/comments/'+ comment_id +'/reactions';
+  var path = '/repos/'+ owner +'/'+ repo +'/comments/'+ commit_id +'/reactions';
 
   console.log(path);
 
@@ -33,7 +32,7 @@ function message(body) {
     method: 'POST',
     headers: {
       //'Content-Type': 'application/x-www-form-urlencoded',
-      'Authorization': 'token 3cedfaef5c458347de0e0b7f306b2de0f36d4f51',
+      'Authorization': 'token ' + token,
       'Content-Length': Buffer.byteLength(_wh)
     }
   };

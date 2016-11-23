@@ -8,3 +8,4 @@ make.js
 /test/compiler/js/*
 */.DS_Store
 .DS_Store
+routes/token.js
