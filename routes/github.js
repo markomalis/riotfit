@@ -22,6 +22,8 @@ function message(body) {
   };
   var path = '/repos/'+ owner +'/'+ repo +'/comments/'+ comment_id +'/reactions';
 
+  console.log(path);
+
   var options = {
     hostname: 'https://api.github.com',
     port: 443,
