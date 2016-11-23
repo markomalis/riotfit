@@ -6,7 +6,9 @@ require('../exercise/tags/exercise-add.tag')
 require('../exercise/tags/exercise-app.tag')
 require('../exercise/tags/exercise-detail.tag')
 require('../exercise/tags/exercise-edit.tag')
-require('../exercise/tags/exercise-list.tag')
+require('../exercise/tags/pagecontent.tag')
+require('../exercise/tags/pagecontrol.tag')
+require('../exercise/tags/sidebar.tag')
 require('../exercise/tags/search.tag')
 
 exs = exs.map(function(e){

@@ -6,3 +6,5 @@ dist
 make.js
 # these files are generated anyway
 /test/compiler/js/*
+*/.DS_Store
+.DS_Store

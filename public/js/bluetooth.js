@@ -49,24 +49,12 @@
 	var redux = __webpack_require__(1);
 	var riot = __webpack_require__(16);
 	var sortByName = __webpack_require__(18).sortListByName;
-	var exs = __webpack_require__(39).data;
-	__webpack_require__(44);
-	__webpack_require__(45);
-	__webpack_require__(47);
-	__webpack_require__(48);
-	__webpack_require__(49);
-	__webpack_require__(50);
-	__webpack_require__(51);
-	__webpack_require__(52);
+	__webpack_require__(19);
 
-	exs = exs.map(function (e) {
-	    e.visible = true;
-	    return e;
-	});
-	var store = redux.createStore(__webpack_require__(53), { exercises: exs.sort(sortByName) });
+	var store = redux.createStore(__webpack_require__(20));
 
 	document.addEventListener('DOMContentLoaded', function () {
-	    riot.mount('div#main', 'exercise-app', { store: store });
+	    riot.mount('div#main', 'bluetooth-app', { store: store });
 	});
 
 /***/ },
@@ -3829,87 +3817,14 @@
 	};
 
 /***/ },
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */,
-/* 23 */,
-/* 24 */,
-/* 25 */,
-/* 26 */,
-/* 27 */,
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	var data = [{ name: "Deadlift", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Benchpress", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Biceps curl", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Push press", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Shoulder press", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Squat", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Bulgarian split squat", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Front Squat", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Overhead Squat", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Barbell rows", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Dumbell press", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Incline Dumbell press", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Front lunges", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Barbell lunges", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Walking lunges", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Jumping lunges", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Ab wheel", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Plank", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Side plank", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Pull up", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Dips", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Push up", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Cable row", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Step up", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Row sprint", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Sprint", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Hill sprint", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Down Hill Sprint", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Jump Squat", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }, { name: "Leg Press", description: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from  de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", tags: ['strength', 'kast'] }];
-
-	exports.data = data;
-
-/***/ },
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var riot = __webpack_require__(16);
 
-	riot.tag2('exercise-add', '<div onclick="{closeAddView}" class="popup-blur"></div> <div class="popup-form"> <div><span onclick="{closeAddView}" class="glyphicon glyphicon-remove popup-close" aria-hidden="true"></span></div> <h3>Add a new exercise to your personal library</h3> <form id="exercise-add-form" onsubmit="{addExercise}"> <input name="name" type="text" class="form-control inline-item mb5" placeholder="Name for the exercise"> <span each="{tag in this.opts.tags}" class="tag"> {tag} <span class="deleteTag" onclick="{deleteTag}">x</span></span> <span class="tag"> ... </span> <input name="tagged" type="text" class="form-control inline-item mb5" placeholder="Tags" onkeypress="{addTag}"> <textarea rows="8" name="description" type="text" class="form-control inline-item mb5" placeholder="Descritpion"></textarea> <input name="video" type="text" class="form-control inline-item mb5" placeholder="Video link"> <button type="submit" class="btn btn-default inline-item color2 item-selecter full-width">Submit</button> </form> </div>', '', '', function(opts) {
-	        this.addExercise = function(e) {
-	            if(e.target.name.value && e.target.description.value){
-	                this.opts.addexercise({
-	                    name: e.target.name.value,
-	                    description: e.target.description.value,
-	                    tags: this.opts.tags,
-	                    video: e.target.video.value,
-	                    visible: true,
-	                    own: true
-	                })
-	            }
-	        }.bind(this)
-
-	        this.addTag = function(e) {
-	            if(e.keyCode==13){
-	                this.opts.addtag(e.target.value)
-	                e.target.value = ''
-	            }
-	            return true
-	        }.bind(this)
-
-	        this.closeAddView = function(e) {
-	            this.opts.closeaddview()
-	        }.bind(this)
-
-	        this.deleteTag = function(e) {
-	            var index = this.opts.tags.indexOf(e.item.tag)
-	            this.opts.deletetag(index)
-	        }.bind(this)
-	});
-
-
-/***/ },
-/* 45 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var riot = __webpack_require__(16);
-
-	riot.tag2('exercise-app', '<sidebar exercises="{this.state.exercises}" detail="{this.state.detail}" selectexercise="{selectExercise}" updatesearchsidebar="{updateSearchSidebar}"> </sidebar> <div class="col-xs-12 col-sm-9 col-md-10 mt10"> <pagecontrol></pagecontrol> <pagecontent></pagecontent> </div>', '', '', function(opts) {
-	    var actions = __webpack_require__(46)
+	riot.tag2('bluetooth-app', '<button class="btn btn-default" onclick="{search}">Search devices!</button> <button class="btn btn-default" onclick="{read}">Read from devices!</button> <button class="btn btn-default" onclick="{write}">Write to devices!</button>', '', '', function(opts) {
 	    var store = this.opts.store
+	    var characteristic_map = new Map()
 	    this.state = store.getState()
 	    console.log(this.state)
 	    var unsubscribe = store.subscribe(function(){
@@ -3918,404 +3833,126 @@
 	      this.update()
 	    }.bind(this))
 
-	    this.addExercise = function(exercise){
-	      store.dispatch(actions.addExercise(exercise))
+	    this.connect = function() {
+	      console.log('connect')
+	      chrome.bluetooth.getAdapterState(function(adapter) {
+	        console.log("Adapter " + adapter.address + ": " + adapter.name);
+	      });
+	    }.bind(this)
+	    this.anyDeviceFilter = function() {
+
+	      return Array.from('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ')
+	        .map(c => ({namePrefix: c}))
+	        .concat({name: ''});
 	    }.bind(this)
 
-	    this.addTag = function(tag){
-	      store.dispatch(actions.addTag(tag))
+	    this.read = function() {
+	      console.log("in read");
+
+	      for([uuid, characteristic] of characteristic_map){
+	        characteristic.readValue()
+	        .then(value => {
+	          console.log(value.getUint8(0))
+	        })
+	        .catch(error => {
+	          console.log(error)
+	        })
+	      }
 	    }.bind(this)
 
-	    this.closeAddView = function() {
-	      store.dispatch(actions.addView(false))
+	    this.search = function() {
+	      console.log('in search')
+	      navigator.bluetooth.requestDevice({
+	        filters: this.anyDeviceFilter(),
+	        optionalServices: ['battery_service']
+	      })
+	      .then(device => {
+	        console.log(device)
+	        return device.gatt.connect()
+	      })
+	      .then(server => {
+	        console.log('in server part')
+	        return server.getPrimaryService(0x180D)
+	      })
+	      .then(service => {
+	        console.log('in service part')
+	        return this.cacheCharacteristic(service, 0x2A19)
+	      })
+	      .catch(error => {
+	        console.log(error)
+	      })
 	    }.bind(this)
 
-	    this.closePageContent = function() {
-	      var pc = document.getElementById("pc_content")
-	      pc.className += " closed "
+	    this.write = function() {
+	      console.log("in write");
+
+	      for([uuid, characteristic] of characteristic_map){
+	        characteristic.writeValue(new Uint8Array([23]))
+	        .then(value => {
+	          console.log('succes')
+	        })
+	        .catch(error => {
+	          console.log(error)
+	        })
+	      }
 	    }.bind(this)
 
-	    this.deleteTag = function(tag){
-	      store.dispatch(actions.deleteTag(tag))
+	    this.cacheCharacteristic = function(service, characteristicUuid){
+	      console.log("caching characteristic");
+	      return service.getCharacteristic(characteristicUuid)
+	      .then( characteristic => {
+	        characteristic_map.set(characteristicUuid, characteristic)
+	      })
 	    }.bind(this)
 
-	    this.notify = function() {
-	      console.log('yolo');
-	    }.bind(this)
-
-	    this.openPageContent = function() {
-	      var pc = document.getElementById("pc_content")
-	      pc.className.replace(/\closed\b/,'')
-	      pc.className += " open "
-	    }.bind(this)
-
-	    this.selectExercise = function(index){
-	      this.closePageContent()
-	      store.dispatch(actions.selectExercise(index))
-	      this.openPageContent()
-	    }.bind(this)
-
-	    this.setAddView = function() {
-	      store.dispatch(actions.addView(true))
-	    }.bind(this)
-
-	    this.setEditView = function() {
-	      store.dispatch(actions.detailView(actions.EDIT_VIEW))
-	    }.bind(this)
-
-	    this.setExerciseView = function() {
-	      store.dispatch(actions.detailView(actions.EXERCISE_VIEW))
-	    }.bind(this)
-
-	    this.setListView = function() {
-	      store.dispatch(actions.panelView(actions.LIST_VIEW))
-	    }.bind(this)
-
-	    this.updatePageContent = function() {
-	      var pc = document.getElementById("pc_content")
-	      pc.className += " closed "
-	    }.bind(this)
-
-	    this.updateSearchSidebar = function(text) {
-	      store.dispatch(actions.search(text))
-	    }.bind(this)
 	});
 
 
 /***/ },
-/* 46 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	// Action type constants
-	var ADD_EXERCISE = exports.ADD_EXERCISE = 'ADD_EXERCISE';
-	var ADD_TAG = exports.ADD_TAG = 'ADD_TAG';
-	var ADD_VIEW = exports.ADD_VIEW = 'ADD_VIEW';
-	var DELETE_TAG = exports.DELETE_TAG = 'DELETE_TAG';
-	var EDIT_EXERCISE = exports.EDIT_EXERCISE = 'EDIT_EXERCISE';
-	var SELECT_EXERCISE = exports.SELECT_EXERCISE = 'SELECT_EXERCISE';
-	var SEARCH = exports.SEARCH = 'SEARCH';
-	var SET_DETAIL_VIEW = exports.SET_DETAIL_VIEW = 'SET_DETAIL_VIEW';
-	var SET_PANEL_VIEW = exports.SET_PANEL_VIEW = 'SET_PANEL_VIEW';
-
-	// Panel-View type constants
-	var DETAIL_VIEW = exports.DETAIL_VIEW = 'DETAIL_VIEW';
-	var LIST_VIEW = exports.LIST_VIEW = 'LIST_VIEW';
-
-	// Detail-View type constants
-	var EDIT_VIEW = exports.EDIT_VIEW = 'EDIT_VIEW';
-	var EXERCISE_VIEW = exports.EXERCISE_VIEW = 'EXERCISE_VIEW';
-
-	// Action creators
-	var addExercise = exports.addExercise = function addExercise(exercise) {
-	    return {
-	        type: ADD_EXERCISE,
-	        exercise: exercise
-	    };
-	};
-
-	var addTag = exports.addTag = function addTag(tag) {
-	    return {
-	        type: ADD_TAG,
-	        tag: tag
-	    };
-	};
-
-	var addView = exports.addView = function addView(show) {
-	    return {
-	        type: ADD_VIEW,
-	        show: show
-	    };
-	};
-
-	var deleteTag = exports.deleteTag = function deleteTag(index) {
-	    return {
-	        type: DELETE_TAG,
-	        index: index
-	    };
-	};
-
-	var selectExercise = exports.selectExercise = function selectExercise(index) {
-	    return {
-	        type: SELECT_EXERCISE,
-	        index: index
-	    };
-	};
-
-	var search = exports.search = function search(text) {
-	    return {
-	        type: SEARCH,
-	        text: text
-	    };
-	};
-
-	var detailView = exports.detailView = function detailView(view) {
-	    return {
-	        type: SET_DETAIL_VIEW,
-	        view: view
-	    };
-	};
-
-	var panelView = exports.panelView = function panelView(view) {
-	    return {
-	        type: SET_PANEL_VIEW,
-	        view: view
-	    };
-	};
-
-/***/ },
-/* 47 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var riot = __webpack_require__(16);
-
-	riot.tag2('exercise-detail', '<h3 hide="{this.opts.exercise.name}"> Select an exercise for more info </h3> <div show="{this.opts.exercise.name}"> <h3 class="detail-title mb5"> {this.opts.exercise.name} </h3> <iframe width="100%" height="340px" src="https://www.youtube.com/embed/wPRm8rPMWgA" frameborder="0" allowfullscreen></iframe> <span class="tag" each="{tag in this.opts.exercise.tags}"> {tag} </span> <div class="mb90"> {this.opts.exercise.description} </div> </div>', '', '', function(opts) {
-	});
-
-
-/***/ },
-/* 48 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var riot = __webpack_require__(16);
-
-	riot.tag2('exercise-edit', '<div hide="{this.opts.exercise.own}">You need to select a exercise from your personal library first</div> <form show="{this.opts.exercise.own}"> <input name="name" type="text" class="form-control inline-item mb5" placeholder="Name for the exercise" value="{this.opts.exercise.name}"> <span each="{tag in this.opts.exercise.tags}" class="tag"> {tag} <span class="deleteTag" onclick="{deleteTag}">x</span></span> <span class="tag"> ... </span> <input name="tagged" type="text" class="form-control inline-item mb5" placeholder="Add tags" onkeypress="{addTag}"> <textarea rows="8" name="description" type="text" class="form-control inline-item mb5" placeholder="Descritpion" value="{this.opts.exercise.description}"></textarea> <input name="video" type="text" class="form-control inline-item mb5" placeholder="Video link" value="{this.opts.exercise.video}"> <button type="submit" class="btn btn-default inline-item color2 item-selecter full-width">Save</button> </form>', '', '', function(opts) {
-	        this.editExercise = function(e) {
-	            if(e.target.name.value && e.target.description.value){
-	                this.opts.addexercise({
-	                    name: e.target.name.value,
-	                    description: e.target.description.value,
-	                    tags: this.opts.tags,
-	                    video: e.target.video.value,
-	                    visible: true,
-	                    own: true
-	                })
-	            }
-	        }.bind(this)
-
-	        this.addTag = function(e) {
-
-	            if(e.keyCode==13){
-	                console.log("yolo")
-	            }
-	            return true
-	        }.bind(this)
-
-	        this.deleteTag = function(e) {
-
-	            console.log(this.opts.exercise.tags.indexOf(e.item.tag))
-	        }.bind(this)
-
-	        this.test = function(e) {
-	            console.log(e)
-	            console.log(this.opts.exercise)
-	        }.bind(this)
-	});
-
-
-/***/ },
-/* 49 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var riot = __webpack_require__(16);
-
-	riot.tag2('pagecontent', '<div class="row"> <div class="col-xs-12"> <div id="pc_content" class="panel panel-default"> <div class="panel-body"> <div class="row"> <div class="col-xs-12 col-sm-6"> <img class="full-width" src="/images/timeline.png"> </div> <div class="col-xs-12 col-sm-6"> <img class="full-width" src="/images/timeline.png"> </div> </div> </div> </div> </div> </div>', '@keyframes close { 0%{ width: 100%; } 50%{ width: 50%; } 100%{ width: 0%; } } #pc_content.closed { animation-name: close; animation-duration: 1s; animation-timing-function: linear; animation-fill-mode: forwards; } #pc_content.open { animation-name: close; animation-duration: 1s; animation-timing-function: linear; animation-fill-mode: forwards; animation-direction: reverse; }', '', function(opts) {
-	        this.getExercise = function(e) {
-	            this.opts.selectexercise(e.item.index)
-	            window.scrollTo(0, 0);
-	        }.bind(this)
-	});
-
-
-/***/ },
-/* 50 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var riot = __webpack_require__(16);
-
-	riot.tag2('pagecontrol', '<div class="row mb15"> <div class="col-xs-12"> <div class="btn-group full-width"> <button type="button" class="btn btn-lg btn-default"> <span class="hidden-xs">Personal Records <span class="glyphicon glyphicon-user" aria-hidden="true"></span></span> <span class="visible-xs">PRs <span class="glyphicon glyphicon-user" aria-hidden="true"></span></span> </button> <button type="button" class="btn btn-lg btn-default"> <span class="hidden-xs">Statistics <span class="glyphicon glyphicon-signal" aria-hidden="true"></span></span> <span class="visible-xs">Stats <span class="glyphicon glyphicon-signal" aria-hidden="true"></span></span> </button> <button type="button" class="btn btn-lg btn-default"> <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> </button> <button type="button" class="btn btn-lg btn-default"> <span class="hidden-xs">Add <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></span> <span class="visible-xs"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></span> </button> </div> </div> </div>', '', '', function(opts) {
-	        this.getExercise = function(e) {
-	            this.opts.selectexercise(e.item.index)
-	            window.scrollTo(0, 0);
-	        }.bind(this)
-	});
-
-
-/***/ },
-/* 51 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var riot = __webpack_require__(16);
-
-	riot.tag2('sidebar', '<div id="search-sidebar" class="col-sm-3 col-md-2 no-padding hidden-xs"> <div class="btn-group full-width br1"> <button class="btn btn-default btn-lg dropdown-toggle full-width br1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exercise<span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <search updatesearchsidebar="{updateSearchSidebar}"></search> <div class="search-item color1" each="{exercise, index in this.opts.exercises}" show="{exercise.visible}" onclick="{selectExercise}"> <span class="{red : selected(index)}">{exercise.name}</span> </div> </div>', '', '', function(opts) {
-	    var tag = this.opts
-
-	    this.selectExercise = function(e) {
-	      tag.selectexercise(e.item.index)
-	      window.scrollTo(0, 0);
-	    }.bind(this)
-
-	    this.selected = function(index) {
-	      return tag.detail == index
-	    }.bind(this)
-
-	    this.updateSearchSidebar = function(text) {
-	      tag.updatesearchsidebar(text)
-	    }.bind(this)
-	});
-
-
-/***/ },
-/* 52 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var riot = __webpack_require__(16);
-
-	riot.tag2('search', '<div class="input-group mb15 full-width"> <input oninput="{searchList}" type="text" class="form-control inline-item" placeholder="Search exercise"> </div>', '', '', function(opts) {
-	        this.searchList = function(e) {
-	            console.log(this.opts);
-	            this.opts.updatesearchsidebar(e.target.value)
-	        }.bind(this)
-	});
-
-
-/***/ },
-/* 53 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var redux = __webpack_require__(1);
-	var actions = __webpack_require__(46);
+	var actions = __webpack_require__(21);
 	var sortByName = __webpack_require__(18).sortListByName;
-	//Action variables
-	var ADD_EXERCISE = actions.ADD_EXERCISE;
-	var ADD_TAG = actions.ADD_TAG;
-	var ADD_VIEW = actions.ADD_VIEW;
-	var DELETE_TAG = actions.DELETE_TAG;
-	var DETAIL_VIEW = actions.DETAIL_VIEW;
-	var EXERCISE_VIEW = actions.EXERCISE_VIEW;
-	var LIST_VIEW = actions.LIST_VIEW;
-	var SEARCH = actions.SEARCH;
-	var SELECT_EXERCISE = actions.SELECT_EXERCISE;
-	var SET_DETAIL_VIEW = actions.SET_DETAIL_VIEW;
-	var SET_PANEL_VIEW = actions.SET_PANEL_VIEW;
 
-	function addView() {
-	    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-	    var action = arguments[1];
+	function connected() {
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+	  var action = arguments[1];
 
-	    switch (action.type) {
-	        case ADD_EXERCISE:
-	            return false;
-	        case ADD_VIEW:
-	            return action.show;
-	        default:
-	            return state;
-	    }
+	  return state;
 	}
-
-	function detail() {
-	    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-	    var action = arguments[1];
-
-	    switch (action.type) {
-	        case SELECT_EXERCISE:
-	            return action.index;
-	        default:
-	            return state;
-	    }
-	}
-
-	function exercises() {
-	    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-	    var action = arguments[1];
-
-	    switch (action.type) {
-	        case ADD_EXERCISE:
-	            return state.concat([action.exercise]).sort(sortByName);
-	        case SEARCH:
-	            return state.map(function (exercise, index) {
-	                if (!action.text) {
-	                    return Object.assign({}, exercise, { visible: true });
-	                } else {
-	                    return Object.assign({}, exercise, { visible: exercise.name.toLowerCase().indexOf(action.text.toLowerCase()) > -1 ? true : false });
-	                }
-	            }).sort(sortByName);
-	        default:
-	            return state;
-	    }
-	}
-
-	function detailView() {
-	    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : EXERCISE_VIEW;
-	    var action = arguments[1];
-
-	    switch (action.type) {
-	        case SELECT_EXERCISE:
-	            return EXERCISE_VIEW;
-	        case SET_DETAIL_VIEW:
-	            return action.view;
-	        default:
-	            return state;
-	    }
-	}
-
-	function panelView() {
-	    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : LIST_VIEW;
-	    var action = arguments[1];
-
-	    switch (action.type) {
-	        case SELECT_EXERCISE:
-	            return DETAIL_VIEW;
-	        case SET_PANEL_VIEW:
-	            return action.view;
-	        default:
-	            return state;
-	    }
-	}
-
-	function tags() {
-	    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-	    var action = arguments[1];
-
-	    switch (action.type) {
-	        case ADD_EXERCISE:
-	            return [];
-	        case ADD_TAG:
-	            return state.concat([action.tag]);
-	        case DELETE_TAG:
-	            var newState = Object.assign([], state);
-	            newState.splice(action.index, 1);
-	            return newState;
-	        default:
-	            return state;
-	    }
-	}
-
-	/*
-	function search(state='', action){
-	    switch(action.type) {
-	        case SEARCH:
-	            return action.text
-	        default:
-	            return state
-	    }
-	}
-	*/
 
 	module.exports = redux.combineReducers({
-	    addView: addView,
-	    detail: detail,
-	    exercises: exercises,
-	    detailView: detailView,
-	    panelView: panelView,
-	    tags: tags
+	  connected: connected
 	});
+
+/***/ },
+/* 21 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var CONNECT_DEVICE = exports.CONNECT_DEVICE = "CONNECT_DEVICE";
+	var SEARCH_DEVICES = exports.SEARCH_DEVICES = "SEARCH_DEVICES";
+
+	var connectDevice = exports.connectDevice = function connectDevice(device) {
+	  return {
+	    type: CONNECT_DEVICE,
+	    device: device
+	  };
+	};
+
+	var searchDevices = exports.searchDevices = function searchDevices() {
+	  return {
+	    type: SEARCH_DEVICES
+	  };
+	};
 
 /***/ }
 /******/ ]);

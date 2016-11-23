@@ -3,11 +3,13 @@ var path = require('path')
 module.exports = {
     context: __dirname + "/apps",
     entry: {
+        bluetooth: "./bluetooth",
         calendar: "./calendar",
         exercise: "./exercise",
+        jumptest: "./jumptest",
         workout: "./workout.js",
         workoutcreator: "./workoutcreator.js"
-            
+
     },
     output: {
         path: __dirname + "/public/js/",
@@ -15,8 +17,8 @@ module.exports = {
     },
     module: {
         loaders: [
-            { 
-                test: /\.js$/, 
+            {
+                test: /\.js$/,
                 loader: "babel-loader",
                 exclude: path.resolve(__dirname, "node_modules"),
                 query:{

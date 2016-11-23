@@ -41,6 +41,10 @@ a:hover{
   display: none;
 }
 
+.blur.open {
+  display: none;
+}
+
 .main-header, .sidemenu-header{
   font: 14px "Baron", Helvetica, Arial, sans-serif;
   text-align: center;
@@ -49,7 +53,6 @@ a:hover{
 .menu-nav{
   background-color: #000;
   padding: 5px 15px;
-  margin-bottom: 10px;
   border-top: 1px solid;
 }
   .menu-nav > img{
@@ -98,7 +101,7 @@ a:hover{
 }
 
 .tag:hover::after {
-   border-left-color: crimson; 
+   border-left-color: crimson;
 }
  .tag > .deleteTag{
   color: #ccc;
@@ -122,6 +125,16 @@ a:hover{
   color: #FFF;
 }
 
+#search-sidebar{
+  background-color: #f3f3f3;
+  min-height: 100vh;
+  border-right: 1px solid #ccc;
+}
+
+#footer{
+  background-color: currentColor;
+  padding: 15px 5px;
+}
 
 .exerciseRow{
   width: 100%;
@@ -144,7 +157,7 @@ a:hover{
 .h-scroll{
   width: 150%;
   height: 170px;
-  
+
 }
 
 .h-scroll-hide-bar{
@@ -161,7 +174,7 @@ a:hover{
   height: 140px;
   display: inline-block;
   width: 32%;
-  background-color: crimson; 
+  background-color: crimson;
   color: #fff;
 }
 .h-scroll div:first-child{
@@ -181,13 +194,19 @@ a:hover{
 #sidemenu{
   z-index: 100;
   width: 0;
-  height: 100%;
+  height: 0%;
   position: absolute;
   top: 157px;
   left: 0;
   background-color: #000;
   opacity: 0.9;
   overflow: hidden;
+  transition: width 1s linear,
+    height 1s linear;
+}
+#sidemenu.open {
+  width: 70%;
+  height: 100%;
 }
   .sidemenu-header{
     font-size: 24px;
@@ -203,12 +222,12 @@ a:hover{
     padding: 11px 0px;
     text-align: center;
   }
-  
-  
+
+
   .sidemenu-nav > a{
     color: #FFF;
   }
-  
+
   #sidemenu-toggle{
     width: 45px;
     height: 45px;
@@ -369,6 +388,10 @@ a:hover{
   border-bottom: solid #45a163;
 }
 
+.mt10{
+  margin-top: 10px;
+}
+
 .mb5{
   margin-bottom: 5px;
 }
@@ -391,6 +414,13 @@ a:hover{
 
 .pb100{
   margin-bottom: 100px;
+}
+.no-padding{
+  padding: 0 !important;
+}
+
+.search-item {
+  padding: 5px 15px;
 }
 
 .search-component > div > input{
@@ -556,14 +586,13 @@ a:hover{
 }
 
 .error:-moz-placeholder { /* Firefox 18- */
-   color: red;  
+   color: red;
 }
 
 .error::-moz-placeholder {  /* Firefox 19+ */
-   color: red;  
+   color: red;
 }
 
-.error:-ms-input-placeholder {  
-   color: red;  
+.error:-ms-input-placeholder {
+   color: red;
 }
-
