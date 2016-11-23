@@ -1,48 +1,52 @@
 var express = require('express');
+var https = require('https');
 var router = express.Router();
 var {token} = require('./token.js');
 
 router.route('/')
     .get(function(req,res,next){
-      console.log("in GH GET");
-
       //this.message(req.body);
       res.status(200).send('OK');
     })
 
     .post(function(req,res,next){
-      console.log("in GH POST");
-      // console.log(req.body);
-      console.log(message);
-      message(req.body);
-      res.status(200).send('OK');
+      message(req.body, function(err) {
+        if(err) {
+          next(err);
+          //res.status(404).send('NOT OK');
+        }
+        else {
+          res.status(200).send('OK');
+        }
+      });
+
     });
 
 
-function message(body) {
+function message(body, callback) {
+  console.log(body);
   var owner = body.repository.owner.name;
   var repo = body.repository.name;
-  var commit_id =  commits[0].id;
-  var content = {
-    "content": "heart"
-  };
-  var path = '/repos/'+ owner +'/'+ repo +'/comments/'+ commit_id +'/reactions';
-
-  console.log(path);
+  var commit_id =  body.commits[0].id;
+  var body = JSON.stringify({
+    body: "Great stuff"
+  });
+  var path = '/repos/'+ owner +'/'+ repo +'/commits/'+ commit_id +'/comments';
 
   var options = {
-    hostname: 'https://api.github.com',
+    hostname: 'api.github.com',
     port: 443,
     path: path,
     method: 'POST',
     headers: {
-      //'Content-Type': 'application/x-www-form-urlencoded',
+      'Content-Type': 'application/json',
       'Authorization': 'token ' + token,
-      'Content-Length': Buffer.byteLength(_wh)
+      'User-Agent': 'GitBot'
+      //'Content-Length': Buffer.byteLength(content)
     }
   };
 
-  var req = http.request(options, (res) => {
+  var req = https.request(options, (res) => {
     var result = '';
 
     res.on('data', (chunk) => {
@@ -50,16 +54,17 @@ function message(body) {
     });
 
     res.on('end', () => {
-      console.log(result);
+      console.log(result.toString());
+      callback(undefined)
     });
   });
 
-  req.on('errror', (error) => {
+  req.on('error', (error) => {
+    callback(error);
     console.log(error);
   })
 
-  req.write(JSON.stringify(content));
-  req.end();
+  req.end(body);
 }
 
 module.exports = router;
