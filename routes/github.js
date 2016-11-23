@@ -12,7 +12,9 @@ router.route('/')
 
     .post(function(req,res,next){
       console.log("in GH POST");
-      this.message(req.body);
+      // console.log(req.body);
+      console.log(message);
+      message(req.body);
       res.status(200).send('OK');
     });
 
