@@ -4,11 +4,13 @@ var {token} = require('./token.js');
 
 router.route('/')
     .get(function(req,res,next){
+      console.log("in GH GET");
       this.message(req.body);
       res.status(200).send('OK');
     })
 
     .post(function(req,res,next){
+      console.log("in GH POST");
       this.message(req.body);
       res.status(200).send('OK');
     });
